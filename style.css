@@ -1,3 +1,4 @@
+/* Default styles for all screen sizes */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 * {
@@ -26,7 +27,8 @@ body {
 }
 .choice {
   gap: 20px;
-  width: 400px;
+  max-width: 400px;
+  width: 100%;
 }
 .choice img {
   width: 100px;
@@ -84,6 +86,28 @@ footer {
   img {
     width: 40px;
     padding: 0.5rem 0.2rem;
-  }  
+  }
 
-  
+/* Media queries for screens with maximum width of 767px (mobile devices) */
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 0 20px;
+  }
+  .choice img {
+    width: 70px;
+    height: 70px;
+  }
+  .both-choice h3:nth-child(1) {
+    margin-right: 10px;
+  }
+  .result {
+    font-size: 24px;
+  }
+  .points h3:nth-child(1) {
+    margin-right: 10px;
+  }
+  img {
+    width: 30px;
+    padding: 0.2rem;
+  }
+}
